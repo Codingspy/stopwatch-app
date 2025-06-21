@@ -29,7 +29,7 @@ function App() {
   // Save to backend
   const handleSave = async () => {
     try {
-      await axios.post("http://localhost:5000/api/sessions", {
+      await axios.post("https://stopwatch-app-9zk1.onrender.com/api/sessions", {
         duration: time,
       });
       fetchSessions(); // refresh
