@@ -41,7 +41,7 @@ function App() {
   // Fetch saved sessions
   const fetchSessions = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/sessions");
+      const res = await axios.get("https://stopwatch-app-9zk1.onrender.com/api/sessions");
       setSessions(res.data);
     } catch (err) {
       console.error("Error fetching sessions", err);
